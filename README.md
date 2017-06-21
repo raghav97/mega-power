@@ -1,24 +1,3 @@
-# README
+# Mega Hostel Power Status
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is an open source web app developed using Ruby on Rails, that checks the electricity status of the Mega Hostel (Kamadhenu Hostel) at SASTRA University.
