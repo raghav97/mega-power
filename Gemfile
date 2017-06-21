@@ -57,3 +57,4 @@ gem 'twilio-ruby', '~> 4.11', '>= 4.11.1'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'rake', '~> 12.0'
 gem 'concurrent-ruby', '~> 1.0'
+gem 'rails_12factor', group: :production
