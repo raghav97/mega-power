@@ -1,1 +1,17 @@
-<h1> Hello </h1>
+<% if @status %>
+  <div class = "success">
+    <h1 class = "heading"> Mega Hostel Power Status</h1>
+    <hr>
+
+    <h1> Updated: <%= @time %> </h1>
+    <h1> Status: Yes! </h1>
+  </div>
+<% else %>
+  <div class = "failure">
+    <h1 class = "heading"> Mega Hostel Power Status</h1>
+    <hr>
+
+    <h1> Updated: <%= @time %> </h1>
+    <h1 class = "red"> Status: No Power </h1>
+  </div>
+<% end %>
