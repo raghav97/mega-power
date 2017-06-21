@@ -1,0 +1,19 @@
+current directory: /home/raghav/workspace/apps/mega-power/vendor/cache/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+/usr/bin/ruby2.3 -r ./siteconf20170621-13989-185c9y0.rb extconf.rb
+creating Makefile
+
+current directory: /home/raghav/workspace/apps/mega-power/vendor/cache/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/raghav/workspace/apps/mega-power/vendor/cache/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/raghav/workspace/apps/mega-power/vendor/cache/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20170621-13989-1dq6trh/byebug

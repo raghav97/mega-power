@@ -1,0 +1,11 @@
+.heading{
+  text-align: center;
+}
+
+.success{
+  background-color: #b3ffd9;
+}
+
+.failure{
+  background-color: #ff9999;
+}
