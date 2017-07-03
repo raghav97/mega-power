@@ -34,8 +34,11 @@ namespace :check_power do
     if (all_powers[-1].status != all_powers[-2].status)
       data = "\nOh no, it seems like the power at Mega Hostel is gone. We'll let you know as soon as the power is back \n" if all_powers[-1].status == false
       data = "\nYay, the power is back at Mega Hostel." if all_powers[-1].status == true
-      message = "\nHello there Raghav \n #{data}.\nLast updated at #{all_powers.last.updated}\n\n Regards \n Raghav Vc"
-      # SmsTool.send_sms(number: "9600129789", message: message)
+      users = User.all
+      users.each do |user|
+        message = "\nHello there #{user.name} \n #{data}\nLast updated at #{all_powers.last.updated}\n\n Regards \n Raghav Vc"
+       # SmsTool.send_sms(number: user.phone_number, message: message)
+      end
     end
   end
 end
