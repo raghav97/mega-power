@@ -1,6 +1,6 @@
 # Mega Hostel Power Status
 
-This is an open source application developed on Ruby on Rails to check the electricity status of my hostel / home (Mega Hostel, SASTRA University). The main purpose of this application to make sure that there is electricity in the hostel when I bunk the class, otherwise bunking the class would be useless.
+This is an open source application developed on Ruby on Rails to check the electricity status of my hostel / home (Mega Hostel, SASTRA University). The main purpose of this application to make sure that there is electricity in the hostel when I bunk the class, otherwise bunking the class would be useless. The same application can be used to check the power status of your home while you're at work as well.
 
 ## Working
 
