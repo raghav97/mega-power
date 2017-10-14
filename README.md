@@ -65,6 +65,7 @@ crontab
 ```
 Thats it! This would run the cron job every minute and you should be getting the message to your phone when the power is cut off. 
 
-![text message](https://github.com/raghav97/Shotgun/blob/master/public/assets/Screenshot_2017-06-23-17-12-24.png "text message")
-
+![text message](https://github.com/raghav97/ mega-power/app/assets/images/Screenshot_2017-06-23-17-12-24.png 
+ "text message")
+ 
 Happy bunking!
