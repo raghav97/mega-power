@@ -1,10 +1,10 @@
 # Mega Hostel Power Status
 
-This is an open source application developed solely on Ruby on Rails to check the electricity status of my hostel (Mega Hostel, SASTRA University). The main purpose of this application to make sure that there is electricity in the hostel when I bunk the class, otherwise bunking the class would be useless.
+This is an open source application developed on Ruby on Rails to check the electricity status of my hostel / home (Mega Hostel, SASTRA University). The main purpose of this application to make sure that there is electricity in the hostel when I bunk the class, otherwise bunking the class would be useless. The same application can be used to check the power status of your home while you're at work as well.
 
 ## Working
 
-I assume that when I am in the classroom, my laptop is in my room charging and is connected to the Internet. The laptop runs a cron job every minute to check the laptop battery status using the shell command
+I know that when I am in the classroom, my laptop is in my room charging and is connected to the Internet. The laptop runs a cron job every minute to check the laptop battery status using the shell command
 
 ```
 upower -i /org/freedesktop/UPower/devices/battery_BAT0 
@@ -14,7 +14,7 @@ The shell command would return the current battery stats. If the battery is char
 
 ## Requirements
 
-* A Laptop with Ubuntu / Linux (as cron jobs only work on Linux)
+* A Laptop with Ubuntu / Linux (as cron jobs only work on Linux) with Internet connection
 * Install Ruby 2.3.4
 * Install Rails 5.0.1
 * A Twilio Account with the Twilio id and password which should be added in a .env file
@@ -23,7 +23,39 @@ The shell command would return the current battery stats. If the battery is char
 ## Usage
 
 As of now, this application is open-source and anyone can use this by cloning the repository.
-Once all the requirements are satisfied, run the following commands in the terminal to get the app running
+Once all the requirements are satisfied, go to the project location and run the following commands in the terminal.
+
+First make sure that Ruby and Rails are installed properly by running
+
+```
+ruby -v
+rails -v
+```
+
+Once Ruby and Rails are installed properly in your laptop, run the following commands to setup the app
+
+Run
+```
+bundle install
+```
+to install the gems that are required
+
+After that, run the following commands
+
+```
+rails db:create
+rails db:migrate
+rails db:seed
+rails s
+```
+
+This will start the server and once you go to
+```
+localhost:3000
+```
+in the browser, you should be able to see the web page.
+
+Now, to make the cron job to run every minute, run the following commands.
 
 ```
 whenever
